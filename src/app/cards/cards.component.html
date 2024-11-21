@@ -1,0 +1,18 @@
+<section>
+  <div class="product-list">
+    <ul>
+      <li *ngFor="let product of products">
+        <div class="bandeira">
+            <img src="{{product.image}}" alt="">
+            <div class="coracao">❤️</div>
+        </div>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <div class="rodape">
+            <p>{{ product.price | currency: 'USD' }}</p>
+            <button (click)="chamarFuncao()" class="my-button" [ngStyle]="{'background-color': buttonColor}">Add To Cart</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+nav{
+    background-color: black;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.titulo{
+    display: flex;
+    gap: 5px;
+    font-size: 1.3rem;
+}
+.cor2{
+    color: #FF6452;
+}
